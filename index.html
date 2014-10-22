@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Credit Bun</title>
+	<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+	<div id="wrapper">	
+		<header role="banner">
+			<div class="inner">
+				<div class="header-top-block">
+					<div class="f-left">
+						<a href="/" class="logo">Credite.md</a>
+						<a class="langs-select-wrap">Română</a>
+					</div>
+					<div class="f-right">
+						<nav role="navigation">
+							<a href="#form-block">Получить кредит</a>
+							<a href="#reviews-block">Отзывы</a>
+							<a href="#statistic-block">Статистика</a>
+							<a href="#map-block">Карта</a>
+						</nav>
+						<span class="contacts">Контакты: <span>0 (69) 333-222</span></span>	
+					</div>
+				</div><!-- .header-top-block -->
+				<div class="header-bottom-block">
+					<h1>Добро пожаловать на сайт компании CreditBun!</h1>
+					<h2>Выдаем кредиты быстро, на самых выгодных условиях!</h2>
+					<ul class="list-of-types">
+						<li>
+							<h3>Кредиты без залога</h3>
+							<strong>до 15 000 лей</strong>
+							<a href="#form-block">Заполнить заявку</a>
+						</li>
+						<li>
+							<h3>Авто ломбард</h3>
+							<strong>до 150 000 лей</strong>
+							<a href="#form-block">Заполнить заявку</a>
+						</li>
+						<li>
+							<h3>Кредиты под залог</h3>
+							<strong>до 150 000 лей</strong>
+							<a href="#form-block">Заполнить заявку</a>
+						</li>	
+					</ul><!-- .list-of-types -->	
+				</div><!-- .header-bottom-block -->
+			</div><!-- .inner -->
+			<div class="bg-1"></div>
+			<div class="bg-2"></div>
+			<div class="bg-3"></div>		
+		</header>
+		<section id="form-block" class="form-block">
+			<div class="inner">
+				<div class="main-form-wrapper">
+					<div class="main-form">
+						<form action="#">
+							<div class="form-title">
+								<strong>Кредиты без залога</strong>
+								<span>до 15 000 лей</span>		
+							</div><!-- .form-title -->
+							<div class="form-slider">
+								<strong>Выберите нужную сумму, время рассрочки, цель кредита, и заполните остальные поля:</strong>
+								<div id="slider-summ-type-one" class="slider-wrap s-summ">
+									<div class="min">
+										<strong>500 lei</strong>
+										<span>minimum</span>
+									</div>
+									<div class="slider-block">
+										<div class="slider-summ"></div>
+										<div class="current-summ"><span>5000 lei</span><i></i></div>
+									</div>	
+									<div class="max">
+										<strong>15000 lei</strong>
+										<span>maximum</span>
+									</div>
+									<input type="hidden" value="5000">
+								</div><!-- #slider-summ -->
+								<div id="slider-date-type-one" class="slider-wrap s-date">
+									<div class="min">
+										<strong>1 luna</strong>
+										<span>minimum</span>
+									</div>
+									<div class="slider-block">
+										<div class="slider-date"></div>
+										<div class="current-date"><span>6 luni</span><i></i></div>
+									</div>	
+									<div class="max">
+										<strong>3 ani</strong>
+										<span>maximum</span>
+									</div>
+									<input type="hidden" value="6">
+								</div><!-- #slider-date -->
+							</div><!-- .form-slider -->	
+							<div class="form-content">
+								<div class="form-item-wrap w-full form-box-select form-box">
+									<select data-percent="10">
+										<option>Трагический бабувизм</option>
+										<option>Принцип восприятия</option>
+										<option>Язык образов</option>
+										<option>Трагический закон</option>
+									</select>
+									<div class="fake-select">Цель кредита</div>	
+								</div>	
+								<div class="clearfix"></div>
+								<div class="form-item-wrap w-full">
+									<label>Как вас зовут</label>
+									<div class="form-box f-left w-245">
+										<input type="text" data-percent="10">
+										<span class="fake-label">Имя</span>
+									</div>
+									<div class="form-box f-right w-245">
+										<input type="text" data-percent="10">
+										<span class="fake-label">Фамилия</span>
+									</div>	
+								</div>
+								<div class="clearfix"></div>
+								<div class="form-item-wrap w-full">
+									<label>Паспортные данные</label>
+									<div class="form-box f-left w-245">
+										<input type="text" data-percent="5" name="idnp" class="required">
+										<span class="fake-label">номер IDNP</span>
+									</div>
+									<div class="form-box f-right w-245 form-box-select">
+										<select data-percent="5">
+											<option>18</option>
+											<option>19</option>
+											<option>20</option>
+											<option>21</option>
+										</select>
+										<div class="fake-select c-a">Сколько вам лет?</div>	
+									</div>	
+								</div>
+								<div class="clearfix"></div>
+								<div class="form-item-wrap w-full">
+									<div class="form-box">
+										<input type="text" data-percent="10">
+										<span class="fake-label">Прописка</span>
+									</div>
+									<label class="checkbox-wrap hidden-control">
+										<input type="checkbox" checked="checked">
+										<i></i>
+										<span>Я проживаю по месту прописки</span>
+									</label>	
+								</div>
+								<div class="form-item-wrap w-full hidden-cont">
+									<div class="form-box">
+										<input type="text" data-percent="5">
+										<span class="fake-label">Aдрес проживания</span>
+									</div>	
+								</div>
+								<div class="clearfix"></div>
+								<div class="form-item-wrap w-full">
+									<label>Контактные данные</label>
+									<div class="form-box f-left w-245">
+										<input type="text" data-percent="15" name="email" class="required">
+										<span class="fake-label">Эл. почта</span>
+									</div>
+									<div class="form-box f-right w-245">
+										<input type="text" data-percent="15" name="phone" class="required">
+										<span class="fake-label">Контактный телефон</span>
+									</div>	
+								</div>	
+							</div><!-- .form-content -->
+							<div class="form-submit-block">
+								<label class="i-agree">
+									<input type="checkbox"  checked="checked">
+									<i></i>
+									<span>Даю согласие чтобы CreditBun проверил и обработал мои персональные данные.</span>
+								</label>
+								<button type="submit">Оформить</button>
+							</div><!-- .form-submit-block -->
+						</form>	
+					</div><!-- .main-form -->
+					<div class="main-form">
+						<form action="#">
+							<div class="form-title">
+								<strong>Авто ломбард</strong>
+								<span>до 150 000 лей</span>		
+							</div><!-- .form-title -->
+							<div class="form-slider">
+								<strong>Выберите нужную сумму, время рассрочки, цель кредита, и заполните остальные поля:</strong>
+								<div id="slider-summ-type-two" class="slider-wrap s-summ">
+									<div class="min">
+										<strong>500 lei</strong>
+										<span>minimum</span>
+									</div>
+									<div class="slider-block">
+										<div class="slider-summ"></div>
+										<div class="current-summ"><span>15000 lei</span><i></i></div>
+									</div>	
+									<div class="max">
+										<strong>150000 lei</strong>
+										<span>maximum</span>
+									</div>
+									<input type="hidden" value="15000">
+								</div><!-- #slider-summ -->
+								<div id="slider-date-type-two" class="slider-wrap s-date">
+									<div class="min">
+										<strong>1 luna</strong>
+										<span>minimum</span>
+									</div>
+									<div class="slider-block">
+										<div class="slider-date"></div>
+										<div class="current-date"><span>6 luni</span><i></i></div>
+									</div>	
+									<div class="max">
+										<strong>3 ani</strong>
+										<span>maximum</span>
+									</div>
+									<input type="hidden" value="6">
+								</div><!-- #slider-date -->
+							</div><!-- .form-slider -->	
+							<div class="form-content">
+								<div class="form-item-wrap w-full form-box-select form-box">
+									<select data-percent="5">
+										<option>Трагический бабувизм</option>
+										<option>Принцип восприятия</option>
+										<option>Язык образов</option>
+										<option>Трагический закон</option>
+									</select>
+									<div class="fake-select">Цель кредита</div>	
+								</div>	
+								<div class="clearfix"></div>
+								<div class="form-item-wrap w-full">
+									<label>Как вас зовут</label>
+									<div class="form-box f-left w-245">
+										<input type="text" data-percent="5">
+										<span class="fake-label">Имя</span>
+									</div>
+									<div class="form-box f-right w-245">
+										<input type="text" data-percent="5">
+										<span class="fake-label">Фамилия</span>
+									</div>	
+								</div>
+								<div class="clearfix"></div>
+								<div class="form-item-wrap w-full">
+									<label>Паспортные данные</label>
+									<div class="form-box f-left w-245">
+										<input type="text" data-percent="5" name="idnp" class="required">
+										<span class="fake-label">номер IDNP</span>
+									</div>
+									<div class="form-box f-right w-245 form-box-select">
+										<select data-percent="5">
+											<option>18</option>
+											<option>19</option>
+											<option>20</option>
+											<option>21</option>
+										</select>
+										<div class="fake-select c-a">Сколько вам лет?</div>	
+									</div>	
+								</div>
+								<div class="clearfix"></div>
+								<div class="form-item-wrap w-full">
+									<div class="form-box">
+										<input type="text" data-percent="10">
+										<span class="fake-label">Прописка</span>
+									</div>
+									<label class="checkbox-wrap hidden-control">
+										<input type="checkbox" checked="checked">
+										<i></i>
+										<span>Я проживаю по месту прописки</span>
+									</label>	
+								</div>
+								<div class="form-item-wrap w-full hidden-cont">
+									<div class="form-box">
+										<input type="text" data-percent="5">
+										<span class="fake-label">Aдрес проживания</span>
+									</div>	
+								</div>
+								<div class="clearfix"></div>
+								<div class="form-item-wrap w-full">
+									<label>Контактные данные</label>
+									<div class="form-box f-left w-245">
+										<input type="text" data-percent="15" name="email" class="required">
+										<span class="fake-label">Эл. почта</span>
+									</div>
+									<div class="form-box f-right w-245">
+										<input type="text" data-percent="15" name="phone" class="required">
+										<span class="fake-label">Контактный телефон</span>
+									</div>	
+								</div>	
+							</div><!-- .form-content -->
+							<div class="form-submit-block">
+								<label class="i-agree">
+									<input type="checkbox"  checked="checked">
+									<i></i>
+									<span>Даю согласие чтобы CreditBun проверил и обработал мои персональные данные.</span>
+								</label>
+								<button type="submit">Оформить</button>
+							</div><!-- .form-submit-block -->
+						</form>	
+					</div><!-- .main-form -->
+					<div class="main-form">
+						<form action="#">
+							<div class="form-title">
+								<strong>Кредиты под залог</strong>
+								<span>до 150 000 лей</span>		
+							</div><!-- .form-title -->
+							<div class="form-slider">
+								<strong>Выберите нужную сумму, время рассрочки, цель кредита, и заполните остальные поля:</strong>
+								<div id="slider-summ-type-three" class="slider-wrap s-summ">
+									<div class="min">
+										<strong>500 lei</strong>
+										<span>minimum</span>
+									</div>
+									<div class="slider-block">
+										<div class="slider-summ"></div>
+										<div class="current-summ"><span>15000 lei</span><i></i></div>
+									</div>	
+									<div class="max">
+										<strong>150000 lei</strong>
+										<span>maximum</span>
+									</div>
+									<input type="hidden" value="15000">
+								</div><!-- #slider-summ -->
+								<div id="slider-date-type-three" class="slider-wrap s-date">
+									<div class="min">
+										<strong>1 luna</strong>
+										<span>minimum</span>
+									</div>
+									<div class="slider-block">
+										<div class="slider-date"></div>
+										<div class="current-date"><span>6 luni</span><i></i></div>
+									</div>	
+									<div class="max">
+										<strong>3 ani</strong>
+										<span>maximum</span>
+									</div>
+									<input type="hidden" value="6">
+								</div><!-- #slider-date -->
+							</div><!-- .form-slider -->	
+							<div class="form-content">
+								<div class="form-item-wrap w-full form-box-select form-box">
+									<select data-percent="5">
+										<option>Трагический бабувизм</option>
+										<option>Принцип восприятия</option>
+										<option>Язык образов</option>
+										<option>Трагический закон</option>
+									</select>
+									<div class="fake-select">Цель кредита</div>	
+								</div>	
+								<div class="clearfix"></div>
+								<div class="form-item-wrap w-full">
+									<label>Как вас зовут</label>
+									<div class="form-box f-left w-245">
+										<input type="text" data-percent="5">
+										<span class="fake-label">Имя</span>
+									</div>
+									<div class="form-box f-right w-245">
+										<input type="text" data-percent="5">
+										<span class="fake-label">Фамилия</span>
+									</div>	
+								</div>
+								<div class="clearfix"></div>
+								<div class="form-item-wrap w-full">
+									<label>Паспортные данные</label>
+									<div class="form-box f-left w-245">
+										<input type="text" data-percent="5" name="idnp" class="required">
+										<span class="fake-label">номер IDNP</span>
+									</div>
+									<div class="form-box f-right w-245 form-box-select">
+										<select data-percent="5">
+											<option>18</option>
+											<option>19</option>
+											<option>20</option>
+											<option>21</option>
+										</select>
+										<div class="fake-select c-a">Сколько вам лет?</div>	
+									</div>	
+								</div>
+								<div class="clearfix"></div>
+								<div class="form-item-wrap w-full">
+									<div class="form-box">
+										<input type="text" data-percent="10">
+										<span class="fake-label">Прописка</span>
+									</div>
+									<label class="checkbox-wrap hidden-control">
+										<input type="checkbox" checked="checked">
+										<i></i>
+										<span>Я проживаю по месту прописки</span>
+									</label>	
+								</div>
+								<div class="form-item-wrap w-full hidden-cont">
+									<div class="form-box">
+										<input type="text" data-percent="5">
+										<span class="fake-label">Aдрес проживания</span>
+									</div>	
+								</div>
+								<div class="clearfix"></div>
+								<div class="form-item-wrap w-full">
+									<label>Контактные данные</label>
+									<div class="form-box f-left w-245">
+										<input type="text" data-percent="15" name="email" class="required">
+										<span class="fake-label">Эл. почта</span>
+									</div>
+									<div class="form-box f-right w-245">
+										<input type="text" data-percent="15" name="phone" class="required">
+										<span class="fake-label">Контактный телефон</span>
+									</div>	
+								</div>	
+							</div><!-- .form-content -->
+							<div class="form-submit-block">
+								<label class="i-agree">
+									<input type="checkbox"  checked="checked">
+									<i></i>
+									<span>Даю согласие чтобы CreditBun проверил и обработал мои персональные данные.</span>
+								</label>
+								<button type="submit">Оформить</button>
+							</div><!-- .form-submit-block -->
+						</form>	
+					</div><!-- .main-form -->
+				</div><!-- .main-form-wrapper -->	
+				<div class="sticky-container">
+					<div class="form-info">
+						<div class="percent-block">
+							<strong><span>10</span>%</strong>
+							<span>Вероятность получить кредит</span>
+						</div><!-- .percent-block -->
+						<div class="info-block">
+							<p>Чем больше полей вы заполните, тем больше вероятность получить кредит.</p>
+						</div><!-- .info-block -->		
+					</div><!-- .form-info -->
+				</div><!-- .sticky-container -->		
+			</div><!-- .inner -->	
+		</section><!-- .form-block -->	
+		<section class="credit-rapid-block">
+			<div class="inner">
+				<h1>Кредит за пол часа</h1>
+				<ul class="list-of-r-credits">
+					<li class="item-1">
+						<strong>Заполните заявку</strong>
+						<p>шаг 1.</p>
+					</li>
+					<li class="item-2">
+						<strong>Получите ответ</strong>
+						<p>шаг 2.</p>
+					</li>
+					<li class="item-3">
+						<strong>Заберите деньги</strong>
+						<p>шаг 3.</p>
+					</li>
+				</ul><!-- .list-of-r-credits -->
+			</div><!-- .inner -->	
+		</section><!-- .credit-rapid-block -->	
+		<section id="reviews-block" class="reviews-block">
+			<div class="inner">
+				<div class="text-block">
+					<h1>Только положительные отзывы</h1>
+					<p>Микрофинансовая Организация «CreditBun» SRL, была создана с целью максимального упрощения процедуры выдачи кредитов.</p>
+				</div>
+				<ul class="list-of-reviews">
+					<li class="odd">
+						<div class="review-text">
+							<b>Андрей С</b>
+							<em>24 февраля, 2014</em>
+							<span class="clearfix"></span>
+							<p>Чем больше полей вы заполните, тем больше вероятность получить кредит.</p>
+						</div>	
+					</li>
+					<li class="even">
+						<div class="review-text">
+							<b>Alexandru P</b>
+							<em>24 февраля, 2014</em>
+							<span class="clearfix"></span>
+							<p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
+						</div>	
+					</li>
+					<li class="odd">
+						<div class="review-text">
+							<b>Жора В</b>
+							<em>24 февраля, 2014</em>
+							<span class="clearfix"></span>
+							<p>Спасибо за кредит!</p>
+						</div>	
+					</li>
+					<li class="even">
+						<div class="review-text">
+							<b>Андрей С</b>
+							<em>24 февраля, 2014</em>
+							<span class="clearfix"></span>
+							<p>Чем больше полей вы заполните, тем больше вероятность получить кредит. Чем больше полей вы заполните, тем больше вероятность получить кредит.</p>
+						</div>	
+					</li>
+				</ul><!-- .list-of-reviews -->	
+			</div><!-- .inner -->	
+		</section><!-- .reviews-block -->	
+		<section id="statistic-block" class="statistic-block">
+			<div class="inner">
+				<div class="text-block">
+					<h1>Статистика за сегодня</h1>
+					<p>Его многочисленные, убого тонкие по сравнению с остальным телом ножки беспомощно копошились у него перед глазами.</p>
+				</div>
+				<ul class="list-of-statistic">
+					<li class="item-1">
+						<b>135</b>
+						<span>заявок было подано</span>
+					</li>
+					<li class="item-2">
+						<b>30</b>
+						<span>кредитов было выдано</span>
+					</li>
+				</ul><!-- .list-of-statistic -->	
+			</div><!-- .inner -->	
+		</section><!-- .statistic-block -->	
+		<section class="list-of-credits-block">
+			<div class="inner">
+				<div class="text-block">
+					<h1>Заполнили заявку на кредит</h1>
+					<p>Микрофинансовая Организация «CreditBun» SRL, была создана с целью максимального упрощения процедуры выдачи кредитов.</p>
+				</div>
+				<table class="table-credits">
+					<thead>
+						<tr>
+							<th class="w-18">кто</th>
+							<th class="w-18">сколько</th>
+							<th class="w-18">на сколько</th>
+							<th class="w-28">на что</th>
+							<th class="w-18">когда</th>
+						</tr>
+					</thead>
+					<tbody>	
+						<tr>
+							<td>Андрей С.</td>
+							<td class="summ">
+								<strong class="green"><span>3500</span> леев</strong>
+								<span class="table-slider"><span class="summ-current"></span></span>
+							</td>
+							<td class="date">
+								<strong class="blue"><span>18</span> месяцев</strong>
+								<span class="table-slider"><span class="date-current"></span></span>
+							</td>
+							<td>На новую машину</td>
+							<td><i>1 час назад</i></td>
+						</tr>
+						<tr>
+							<td>Олеся В.</td>
+							<td class="summ">
+								<strong class="green"><span>150000</span> леев</strong>
+								<span class="table-slider"><span class="summ-current"></span></span>
+							</td>
+							<td class="date">
+								<strong class="blue"><span>24</span> месяца</strong>
+								<span class="table-slider"><span class="date-current"></span></span>
+							</td>
+							<td>Нужно отдать старый кредит.</td>
+							<td><i>3 часа назад</i></td>
+						</tr>
+						<tr>
+							<td>Кинг Конг</td>
+							<td class="summ">
+								<strong class="green"><span>75000</span> леев</strong>
+								<span class="table-slider"><span class="summ-current"></span></span>
+							</td>
+							<td class="date">
+								<strong class="blue"><span>36</span> месяцев</strong>
+								<span class="table-slider"><span class="date-current"></span></span>
+							</td>
+							<td>Нужно купить бананы.</td>
+							<td><i>3 часа назад</i></td>
+						</tr>
+						<tr>
+							<td>Андрей С.</td>
+							<td class="summ">
+								<strong class="green"><span>5000</span> леев</strong>
+								<span class="table-slider"><span class="summ-current"></span></span>
+							</td>
+							<td class="date">
+								<strong class="blue"><span>2</span> месяца</strong>
+								<span class="table-slider"><span class="date-current"></span></span>
+							</td>
+							<td>На новую машину</td>
+							<td><i>1 час назад</i></td>
+						</tr>
+						<tr>
+							<td>Олеся В.</td>
+							<td class="summ">
+								<strong class="green"><span>80000</span> леев</strong>
+								<span class="table-slider"><span class="summ-current"></span></span>
+							</td>
+							<td class="date">
+								<strong class="blue"><span>1</span> месяц</strong>
+								<span class="table-slider"><span class="date-current"></span></span>
+							</td>
+							<td>Нужно отдать старый кредит.</td>
+							<td><i>3 часа назад</i></td>
+						</tr>
+						<tr>
+							<td>Кинг Конг</td>
+							<td class="summ">
+								<strong class="green"><span>20000</span> леев</strong>
+								<span class="table-slider"><span class="summ-current"></span></span>
+							</td>
+							<td class="date">
+								<strong class="blue"><span>36</span> месяцев</strong>
+								<span class="table-slider"><span class="date-current"></span></span>
+							</td>
+							<td>Нужно купить бананы.</td>
+							<td><i>3 часа назад</i></td>
+						</tr>
+					</tbody>	
+				</table><!-- .table-credits -->	
+			</div><!-- .inner -->	
+		</section><!-- .list-of-credits-block -->	
+		<section class="skills-block">
+			<div class="inner">
+				<h1>Почему мы?</h1>
+				<ul class="list-of-skills">
+					<li class="item-1">
+						<strong>Работаем оперативно</strong>
+						<p>утверждение за 30 мин, выдача за 1 час!</p>
+					</li>
+					<li class="item-2">
+						<strong>Без лишних документов</strong>
+						<p>Для кредитов без залога нужен только паспорт!</p>
+					</li>
+					<li class="item-3">
+						<strong>Без коммисионов</strong>
+						<p>платите только проценты, за дни использования кредита!</p>
+					</li>
+					<li class="item-4">
+						<strong>Индивидуальный подход</strong>
+						<p>Вы сами решаете и определяете срок и график погашения кредита!</p>
+					</li>	
+				</ul><!-- .list-of-skills -->	
+			</div><!-- .inner -->	
+		</section><!-- .skills-block -->	
+		<section id="map-block" class="map-block">
+			<div class="map-info">
+				<div class="inner text-block">
+					<h1>Выплаты кредита по всему городу</h1>
+					<p>Его многочисленные, убого тонкие по сравнению с остальным телом ножки беспомощно копошились у него перед глазами.</p>
+					<ul class="list-of-map-items">
+						<li class="item-1">банки</li>
+						<li class="item-2">терминалы</li>
+						<li class="item-3">наши офисы</li>
+					</ul>	
+				</div><!-- .inner -->
+				<div class="map-wrapper">
+					<div id="map_canvas"></div>
+				</div><!-- .map-wrapper -->	
+			</div><!-- .map-info -->	
+		</section><!-- .map-block -->	
+		<footer role="contentinfo">
+			<div class="inner">
+				<div class="foo-top-block">
+					<ul>
+						<li class="item-1">
+							<ul>
+								<li><strong>Быстрые и удобные кредиты.</strong></li>
+								<li>Микрофинансовая Организация «CreditBun» SRL</li>
+							</ul>	
+						</li>
+						<li class="item-2">
+							<ul>
+								<li><strong>Chisinau, bd. Moscova, 19</strong></li>
+								<li>В магазине Fourchette, второй этаж</li>
+								<li>График работ: с 09:00 — 18:00</li>
+								<li>0 (22) 83-83-84</li>
+								<li>0 (22) 83-83-77</li>
+							</ul>	
+						</li>
+						<li class="item-3">
+							<ul>
+								<li><strong>Chisinau, bd. Stefan cel Mare, 19</strong></li>
+								<li>В магазине Fourchette, второй этаж</li>
+								<li>0 (69) 753-200</li>
+								<li>0 (60) 726-888</li>
+							</ul>	
+						</li>
+						<li class="item-4">
+							<ul>
+								<li class="phone">
+									<strong>0 (60) 038-999</strong>
+									<span>Горячая линия</span>
+								</li>
+								<li class="mail">
+									<a href="mailto:salut@creditbun.md">salut@creditbun.md</a>
+									<span>Горячая линия</span>
+								</li>
+							</ul>	
+						</li>	
+					</ul>	
+				</div><!-- .foo-top=block -->
+				<div class="foo-bottom-block">
+					<nav role="navigation">
+						<a href="#form-block">Получить кредит</a>
+						<a href="#reviews-block">Отзывы</a>
+						<a href="#statistic-block">Статистика</a>
+						<a href="#map-block">Карта</a>
+					</nav>
+					<p>&copy; 2014 Credit Bun</p>	
+				</div><!-- .foo-bottom-block -->	
+			</div><!-- .inner -->	
+		</footer>
+	</div><!-- #wrapper -->		
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"> </script>
+	<script>window.jQuery || document.write('<script src="./js/jquery-1.8.2.min.js"> <\/script>')</script>
+	<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <script src="./js/jquery-ui.js"></script>
+	<script src="./js/script.js"> </script>
+</body>
+</html>
