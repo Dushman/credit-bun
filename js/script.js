@@ -443,7 +443,7 @@ $(function(){
 		label.addClass('active');
 	});	
 
-	$('.form-box input[type="text"]:not(.required)').one('focusout', function(){
+	$('.form-box input[type="text"]:not(.required)').on('focusout', function(){
 		var label = $(this).parent().find('.fake-label');
 	    if (!this.value){
 	    	$(this).removeClass('success');
@@ -457,6 +457,7 @@ $(function(){
             var totalText = parseInt($('.percent-block strong span').text());
             var percentData = $(this).data('percent');
             $('.percent-block strong span').text(totalText + percentData);
+            $(this).removeAttr('data-percent');
 	    }
 	});
 
@@ -466,12 +467,15 @@ $(function(){
         if(!characterReg.test(inputVal)){
             $(this).removeClass('success');
             $(this).addClass('error');
+            var totalText = parseInt($('.percent-block strong span').text());
+            $('.percent-block strong span').text(totalText);
         } else{
             $(this).removeClass('error');
             $(this).addClass('success');
             var totalText = parseInt($('.percent-block strong span').text());
             var percentData = $(this).data('percent');
             $('.percent-block strong span').text(totalText + percentData);
+            $(this).removeAttr('data-percent');
         }
     });
 
@@ -481,12 +485,15 @@ $(function(){
         if(!characterReg.test(inputVal)){
             $(this).removeClass('success');
             $(this).addClass('error');
+            var totalText = parseInt($('.percent-block strong span').text());
+            $('.percent-block strong span').text(totalText);
         } else{
             $(this).removeClass('error');
             $(this).addClass('success');
             var totalText = parseInt($('.percent-block strong span').text());
             var percentData = $(this).data('percent');
             $('.percent-block strong span').text(totalText + percentData);
+            $(this).removeAttr('data-percent');
         }
     });
 
@@ -496,12 +503,15 @@ $(function(){
         if(!characterReg.test(inputVal)){
             $(this).removeClass('success');
             $(this).addClass('error');
+            var totalText = parseInt($('.percent-block strong span').text());
+            $('.percent-block strong span').text(totalText);
         } else{
             $(this).removeClass('error');
             $(this).addClass('success');
             var totalText = parseInt($('.percent-block strong span').text());
             var percentData = $(this).data('percent');
             $('.percent-block strong span').text(totalText + percentData);
+            $(this).removeAttr('data-percent');
         }
     });
 
