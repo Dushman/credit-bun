@@ -526,7 +526,7 @@ $(function(){
             var label = $(this).find('.fake-label');
             label.removeClass('active');
             $('.percent-block strong span').text('10');
-            $(this).find('.fake-select').removeClass('success, active');
+            $(this).find('.fake-select').removeClass('success');
         });
     });
 
