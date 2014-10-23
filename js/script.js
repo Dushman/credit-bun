@@ -399,7 +399,7 @@ $(function(){
         $(this).parent('.main-form:not(:hidden) .s-date').find('.max').removeClass('active');
         var min = $('.main-form:not(:hidden) .slider-date').slider('option', 'min');
         $('.main-form:not(:hidden) .slider-date').slider({value: min});
-        $('.main-form:not(:hidden) .s-date .current-date > span').text(min + ' месяцев');
+        $('.main-form:not(:hidden) .s-date .current-date > span').text(min + ' месяц');
         var left = $('.main-form:not(:hidden) .s-date .ui-slider-handle').css('left');
         var marginLeft = $('.main-form:not(:hidden) .s-date .current-date').outerWidth() / 2 - 10;
         $('.main-form:not(:hidden) .s-date .current-date').css({'left' : left, 'margin-left' : - marginLeft + 'px'});
