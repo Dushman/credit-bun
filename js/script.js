@@ -240,7 +240,6 @@ $(function(){
 
 	/*-------------------------Form----------------------------*/
 
-
 	$('#slider-summ-type-one .slider-summ').slider({
 		range:'min',
 		value:5000,
@@ -520,6 +519,10 @@ $(function(){
         var index = parent.index();
         parent.addClass('selected').siblings().removeClass('selected');
         $('.main-form-wrapper div.main-form').eq(index).show().siblings().hide();
+        $('.form-content .form-box').each(function(){
+            var textInput = $(this).find('input[type="text"]');
+            textInput.val('');
+        });
     });
 
     $('.hidden-control').click(function(){
