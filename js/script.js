@@ -248,7 +248,7 @@ $(function(){
 		max:15000,
 		step:500,
 		slide: function(event, ui){
-			$('#slider-summ-type-one .current-summ > span').text(ui.value + ' lei');
+			$('#slider-summ-type-one .current-summ > span').text(ui.value + ' лей');
 			var left = $('#slider-summ-type-one .slider-summ .ui-slider-handle').css('left');
 			var marginLeft = $('#slider-summ-type-one .current-summ').outerWidth() / 2 - 10;
 			$('#slider-summ-type-one .current-summ').css({'left' : left, 'margin-left' : - marginLeft + 'px'});
@@ -269,7 +269,7 @@ $(function(){
 		max:36,
 		step:1,
 		slide: function(event, ui){
-			$('#slider-date-type-one .current-date > span').text(ui.value + ' luni');
+			$('#slider-date-type-one .current-date > span').text(ui.value + ' месяцев');
 			var left = $('#slider-date-type-one .slider-date .ui-slider-handle').css('left');
 			var marginLeft = $('#slider-date-type-one .current-date').outerWidth() / 2 - 10;
 			$('#slider-date-type-one .current-date').css({'left' : left, 'margin-left' : - marginLeft + 'px'});
@@ -290,7 +290,7 @@ $(function(){
         max:150000,
         step:500,
         slide: function(event, ui){
-            $('#slider-summ-type-two .current-summ > span').text(ui.value + ' lei');
+            $('#slider-summ-type-two .current-summ > span').text(ui.value + ' лей');
             var left = $('#slider-summ-type-two .slider-summ .ui-slider-handle').css('left');
             var marginLeft = $('#slider-summ-type-two .current-summ').outerWidth() / 2 - 10;
             $('#slider-summ-type-two .current-summ').css({'left' : left, 'margin-left' : - marginLeft + 'px'});
@@ -311,7 +311,7 @@ $(function(){
         max:36,
         step:1,
         slide: function(event, ui){
-            $('#slider-date-type-two .current-date > span').text(ui.value + ' luni');
+            $('#slider-date-type-two .current-date > span').text(ui.value + ' месяцев');
             var left = $('#slider-date-type-two .slider-date .ui-slider-handle').css('left');
             var marginLeft = $('#slider-date-type-two .current-date').outerWidth() / 2 - 10;
             $('#slider-date-type-two .current-date').css({'left' : left, 'margin-left' : - marginLeft + 'px'});
@@ -332,7 +332,7 @@ $(function(){
         max:150000,
         step:500,
         slide: function(event, ui){
-            $('#slider-summ-type-three .current-summ > span').text(ui.value + ' lei');
+            $('#slider-summ-type-three .current-summ > span').text(ui.value + ' лей');
             var left = $('#slider-summ-type-three .slider-summ .ui-slider-handle').css('left');
             var marginLeft = $('#slider-summ-type-three .current-summ').outerWidth() / 2 - 10;
             $('#slider-summ-type-three .current-summ').css({'left' : left, 'margin-left' : - marginLeft + 'px'});
@@ -353,7 +353,7 @@ $(function(){
         max:36,
         step:1,
         slide: function(event, ui){
-            $('#slider-date-type-three .current-date > span').text(ui.value + ' luni');
+            $('#slider-date-type-three .current-date > span').text(ui.value + ' месяцев');
             var left = $('#slider-date-type-three .slider-date .ui-slider-handle').css('left');
             var marginLeft = $('#slider-date-type-three .current-date').outerWidth() / 2 - 10;
             $('#slider-date-type-three .current-date').css({'left' : left, 'margin-left' : - marginLeft + 'px'});
@@ -373,7 +373,7 @@ $(function(){
         $(this).parent('.main-form:not(:hidden) .s-summ').find('.max').removeClass('active');
         var min = $('.main-form:not(:hidden) .slider-summ').slider('option', 'min');
         $('.main-form:not(:hidden) .slider-summ').slider({value: min});
-        $('.main-form:not(:hidden) .s-summ .current-summ > span').text(min + ' lei');
+        $('.main-form:not(:hidden) .s-summ .current-summ > span').text(min + ' лей');
         var left = $('.main-form:not(:hidden) .s-summ .ui-slider-handle').css('left');
         var marginLeft = $('.main-form:not(:hidden) .s-summ .current-summ').outerWidth() / 2 - 10;
         $('.main-form:not(:hidden) .s-summ .current-summ').css({'left' : left, 'margin-left' : - marginLeft + 'px'});
@@ -386,7 +386,7 @@ $(function(){
         $(this).parent('.main-form:not(:hidden) .s-summ').find('.min').removeClass('active');
         var max = $('.main-form:not(:hidden) .slider-summ').slider('option', 'max');
         $('.main-form:not(:hidden) .slider-summ').slider({value: max});
-        $('.main-form:not(:hidden) .s-summ .current-summ > span').text(max + ' lei');
+        $('.main-form:not(:hidden) .s-summ .current-summ > span').text(max + ' лей');
         var left = $('.main-form:not(:hidden) .s-summ .ui-slider-handle').css('left');
         var marginLeft = $('.main-form:not(:hidden) .s-summ .current-summ').outerWidth() / 2 - 10;
         $('.main-form:not(:hidden) .s-summ .current-summ').css({'left' : left, 'margin-left' : - marginLeft + 'px'});
@@ -399,7 +399,7 @@ $(function(){
         $(this).parent('.main-form:not(:hidden) .s-date').find('.max').removeClass('active');
         var min = $('.main-form:not(:hidden) .slider-date').slider('option', 'min');
         $('.main-form:not(:hidden) .slider-date').slider({value: min});
-        $('.main-form:not(:hidden) .s-date .current-date > span').text(min + ' luni');
+        $('.main-form:not(:hidden) .s-date .current-date > span').text(min + ' месяцев');
         var left = $('.main-form:not(:hidden) .s-date .ui-slider-handle').css('left');
         var marginLeft = $('.main-form:not(:hidden) .s-date .current-date').outerWidth() / 2 - 10;
         $('.main-form:not(:hidden) .s-date .current-date').css({'left' : left, 'margin-left' : - marginLeft + 'px'});
@@ -412,7 +412,7 @@ $(function(){
         $(this).parent('.main-form:not(:hidden) .s-date').find('.min').removeClass('active');
         var max = $('.main-form:not(:hidden) .slider-date').slider('option', 'max');
         $('.main-form:not(:hidden) .slider-date').slider({value: max});
-        $('.main-form:not(:hidden) .s-date .current-date > span').text(max + ' luni');
+        $('.main-form:not(:hidden) .s-date .current-date > span').text(max + ' месяцев');
         var left = $('.main-form:not(:hidden) .s-date .ui-slider-handle').css('left');
         var marginLeft = $('.main-form:not(:hidden) .s-date .current-date').outerWidth() / 2 - 10;
         $('.main-form:not(:hidden) .s-date .current-date').css({'left' : left, 'margin-left' : - marginLeft + 'px'});
