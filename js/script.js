@@ -514,6 +514,24 @@ $(function(){
         }
     });
 
+    $('.form-box input[name="first_name"], .form-box input[name="last_name"]').on('focusout', function(){
+        var inputVal = $(this).val();
+        var characterReg = /^[a-zA-Z\u00C0-\u00ff]+$/;
+        if(!characterReg.test(inputVal)){
+            $(this).removeClass('success');
+            $(this).addClass('error');
+            var totalText = parseInt($('.percent-block strong span').text());
+            $('.percent-block strong span').text(totalText);
+        } else{
+            $(this).removeClass('error');
+            $(this).addClass('success');
+            var totalText = parseInt($('.percent-block strong span').text());
+            var percentData = $(this).data('percent');
+            $('.percent-block strong span').text(totalText + percentData);
+            $(this).removeAttr('data-percent');
+        }
+    });
+
     $('.list-of-types li a').click(function(){
         var parent = $(this).parent('li');
         var index = parent.index();
