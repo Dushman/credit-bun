@@ -921,9 +921,9 @@ ul.list-of-types li.selected a{
 
 #slider-summ-type-one .current-summ{left:88px;}
 
-#slider-summ-type-two .current-summ{left:-4px;}
+#slider-summ-type-two .current-summ{left:-11px;}
 
-#slider-summ-type-three .current-summ{left:-4px;}
+#slider-summ-type-three .current-summ{left:-11px;}
 
 .current-summ > i{
   display:block;
