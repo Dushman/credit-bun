@@ -522,6 +522,9 @@ $(function(){
         $('.form-content .form-box').each(function(){
             var textInput = $(this).find('input[type="text"]');
             textInput.val('');
+            textInput.removeClass();
+            var label = $(this).find('.fake-label');
+            label.removeClass('active');
         });
     });
 
