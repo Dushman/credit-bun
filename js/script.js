@@ -516,7 +516,7 @@ $(function(){
 
     $('.form-box input[name="first_name"], .form-box input[name="last_name"]').on('focusout', function(){
         var inputVal = $(this).val();
-        var characterReg = /^[a-zA-Z\u00C0-\u00ff]+$/;
+        var characterReg = /^[a-zA-Zа-яА-Я]*$/;
         if(!characterReg.test(inputVal)){
             $(this).removeClass('success');
             $(this).addClass('error');
