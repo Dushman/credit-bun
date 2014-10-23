@@ -844,6 +844,7 @@ ul.list-of-types li.selected a{
   line-height:18px;
   font-weight:normal;
   margin-bottom:2px;
+  white-space:nowrap;
 }  
 
 .slider-wrap .min span, 
